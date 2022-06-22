@@ -1,7 +1,20 @@
 .wrapper {
+  max-width: 400px;
+  
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+  
+  position: absolute;
+  top: 20px;
+  left: 40%;
 }
 
 .inputWrapper {
@@ -14,16 +27,30 @@
 
 .label {
   
+  margin-right: 10px;
 }
 
-.input {
-
+.input, .input:focus {
+  margin-right: 10px;
+  margin-bottom: 2px;
+  padding: 10px;
+  min-width: 200px;
+  border: none;
+  border-radius: 5px;
+  outline-width: 0;
 }
 
 .searchBtn {
-  padding: 10px;
+  padding: 8px;
   color: white;
   background-color: black;
   border: 2px solid white;
   border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .label {
+    display: none;
+  }
 }

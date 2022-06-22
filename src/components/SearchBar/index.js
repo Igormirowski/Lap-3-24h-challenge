@@ -7,10 +7,8 @@ function SearchBar({ onFormSubmit }) {
 
   const handleBtnClick = (e) => {
     e.preventDefault()
-    console.log('SearchBar - name -> ', name)
 
     onFormSubmit(name)
-
     setName('')
   }
 
@@ -23,13 +21,13 @@ function SearchBar({ onFormSubmit }) {
   return (
     <form className={styles.wrapper}>
       <div className="imputWrapper">
-        <label className="label" htmlFor="searchBar">
-          GitHub Name
+        <label className={styles.label} htmlFor="searchBar">
+          Search
         </label>
 
         <input
           onChange={handleInputChange}
-          className="input"
+          className={styles.input}
           type="text"
           id="searchBar"
           value={name}
@@ -40,7 +38,7 @@ function SearchBar({ onFormSubmit }) {
         type="submit"
         value="Search"
         onClick={handleBtnClick}
-        className="searchBtn"
+        className={styles.searchBtn}
       />
     </form>
   )
