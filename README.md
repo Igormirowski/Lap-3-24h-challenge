@@ -1,17 +1,17 @@
-# Futureproof 24h Challenge - Lap 3
+# Futureproof 24h Challenge - Lap 3 💪
 
-## Purpose
+## Purpose 🎯
 
 The app allows the user to get data from the GitHub service.
 After entering a GitHub username in thr search bar, the user is presented with the owner's details and a list of his repos.
 
-## How to use
+## How to use 💻
 
 - clone repo
 - cd into folder
 - npm start
 
-## How to test
+## How to test 🧪
 
 If you haven't done it already:
 
@@ -20,7 +20,7 @@ If you haven't done it already:
   Then:
 - npm run test
 
-## Technologies
+## Technologies 📡
 
 - ReactJS
   - Hooks: useState and useEffect
@@ -30,14 +30,14 @@ If you haven't done it already:
 - Jest
 - React Testing Library
 
-## Wins
+## Wins 🏆
 
 The App works well and it is pleasant to see.
 
-## Challenges
+## Challenges 😥
 
 Not enough time to implements more tests.
 
-## Bugs
+## Bugs 🐛
 
 Unknown.
