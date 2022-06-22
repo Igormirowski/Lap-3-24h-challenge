@@ -7,7 +7,7 @@ const Header = () => {
 
     <nav>
         <img src={logo} style={{height: "60px"}}></img>
-       Header
+       GitHub Search
     </nav>
        
     
