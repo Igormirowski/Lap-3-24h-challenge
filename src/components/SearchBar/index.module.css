@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputWrapper {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.label {
+  
+}
+
+.input {
+
+}
+
+.searchBtn {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+}
