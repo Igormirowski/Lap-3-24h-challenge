@@ -1,15 +1,27 @@
-import './App.css'
-import { Header, Footer } from './layout'
-import { getData } from './api/github'
+
+
+import { Header, Footer } from './layout';
+import { Home } from './pages';
+import { Routes, Route } from 'react-router-dom';
+
+import './App.css';
+
 
 function App() {
   const myData = getData('buscaroli', 'userDetails')
   console.log(myData)
   return (
     <>
-      <Header />
-      <h1>Home</h1>
-      <Footer />
+
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+         
+         
+
+      </Routes>
+        <Footer />
+
     </>
   )
 }
