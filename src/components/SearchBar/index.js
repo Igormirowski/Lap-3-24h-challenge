@@ -4,7 +4,7 @@ import styles from './index.module.css'
 
 function SearchBar({ onFormSubmit }) {
   const [term, setTerm] = useState('')
-
+  const [letters, setLetters] = useState('')
   const handleBtnClick = (e) => {
     e.preventDefault()
 
@@ -12,6 +12,13 @@ function SearchBar({ onFormSubmit }) {
     onFormSubmit(term)
 
     setTerm('')
+    setLetters('')
+  }
+
+  const handleInputChange = (e) => {
+    e.preventDefault()
+
+    setLetters(e.target.value)
   }
 
   return (
@@ -20,7 +27,13 @@ function SearchBar({ onFormSubmit }) {
         <label className="label" htmlFor="searchBar">
           GitHub Name
         </label>
-        <input className="input" type="text" id="searchBar" value={term} />
+        <input
+          onChange={handleInputChange}
+          className="input"
+          type="text"
+          id="searchBar"
+          value={letters}
+        />
       </div>
       <input
         type="submit"

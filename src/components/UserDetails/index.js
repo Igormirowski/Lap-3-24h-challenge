@@ -16,9 +16,17 @@ function UserDetails({
         <img className={styles.img} src={avatar_url} alt="avatar" />
       </div>
 
-      <ul className={styles.detailsLeftColumn}></ul>
+      <ul className={styles.detailsLeftColumn}>
+        <li className={styles.detail}>Name: {login}</li>
+        <li className={styles.detail}>GitHub: {html_url}</li>
+        <li className={styles.detail}>Followers: {followers}</li>
+        <li className={styles.detail}>Following: {following}</li>
+      </ul>
 
-      <ul className={styles.detailsRightColumn}>Right</ul>
+      <ul className={styles.detailsRightColumn}>
+        <li className={styles.detail}>Created: {created_at}</li>
+        <li className={styles.detail}>Updated: {updated_at}</li>
+      </ul>
     </div>
   )
 }
