@@ -4,7 +4,9 @@ function ListDetails({ list }) {
   return (
     <ul>
       {list
-        ? list.map((repository) => <Repo repo={repository} />)
+        ? list.map((repository) => (
+            <Repo key={repository.name} repo={repository} />
+          ))
         : 'Loading...'}
     </ul>
   )
