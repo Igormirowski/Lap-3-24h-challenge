@@ -2,9 +2,6 @@ import React from 'react'
 import styles from './index.module.css'
 
 function UserDetails({ user }) {
-  // const created = user.created_at.toString().slice(0, 10)
-  // const updated = user.updated_at.toString().slice(0, 10)
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.imgWrap}>
@@ -38,10 +35,20 @@ function UserDetails({ user }) {
 
       <ul className={styles.detailsRightColumn}>
         <li className={styles.detail}>
-          Created: <span className={styles.span}>{user.created_at}</span>
+          Created:{' '}
+          <span className={styles.span}>
+            {user.created_at
+              ? user.created_at.split('').slice(0, 10).join('').toString()
+              : 'unknown'}
+          </span>
         </li>
         <li className={styles.detail}>
-          Updated: <span className={styles.span}>{user.updated_at}</span>
+          Updated:{' '}
+          <span className={styles.span}>
+            {user.updated_at
+              ? user.updated_at.split('').slice(0, 10).join('').toString()
+              : 'unknown'}
+          </span>
         </li>
       </ul>
     </div>
