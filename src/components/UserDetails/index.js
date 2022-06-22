@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './index.module.css'
 
 function UserDetails({ user }) {
-  const created = user.created_at.slice(0, 10)
-  const updated = user.updated_at.slice(0, 10)
+  // const created = user.created_at.toString().slice(0, 10)
+  // const updated = user.updated_at.toString().slice(0, 10)
 
   return (
     <div className={styles.wrapper}>
@@ -24,7 +24,7 @@ function UserDetails({ user }) {
               target="_blank"
               rel="noreferrer"
             >
-              Visit
+              visit page
             </a>
           </span>
         </li>
@@ -38,10 +38,10 @@ function UserDetails({ user }) {
 
       <ul className={styles.detailsRightColumn}>
         <li className={styles.detail}>
-          Created: <span className={styles.span}>{created}</span>
+          Created: <span className={styles.span}>{user.created_at}</span>
         </li>
         <li className={styles.detail}>
-          Updated: <span className={styles.span}>{updated}</span>
+          Updated: <span className={styles.span}>{user.updated_at}</span>
         </li>
       </ul>
     </div>
