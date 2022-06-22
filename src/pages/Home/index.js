@@ -9,8 +9,9 @@ const Home = () => {
   useEffect(() => {
     console.log('Home - useEffect - term -> ', term)
     const fetchData = async () => {
-      const userData = await getData(term, 'user')
-      setUserDetails(userData)
+      const { data } = await getData(term, 'user')
+      console.log('Home - useEffect - userData -> ', data)
+      setUserDetails(data)
     }
 
     fetchData()
@@ -26,7 +27,7 @@ const Home = () => {
       <h1>Home</h1>
       <h3>{userDetails.login}</h3>
       <SearchBar onFormSubmit={onFormSubmit} />
-      <UserDetails details={userDetails} />
+      <UserDetails user={userDetails} />
     </>
   )
 }
