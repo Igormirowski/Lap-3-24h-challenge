@@ -19,13 +19,18 @@ function SearchBar({ onFormSubmit }) {
   }
 
   return (
-    <form className={styles.wrapper}>
+    <form data-testid="form" className={styles.wrapper}>
       <div className="imputWrapper">
-        <label className={styles.label} htmlFor="searchBar">
+        <label
+          data-testid="searchLabel"
+          className={styles.label}
+          htmlFor="searchBar"
+        >
           Search
         </label>
 
         <input
+          data-testid="searchInput"
           onChange={handleInputChange}
           className={styles.input}
           type="text"
