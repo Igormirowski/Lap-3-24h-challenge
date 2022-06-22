@@ -3,7 +3,7 @@ import styles from './index.module.css'
 
 function UserDetails({ user }) {
   return (
-    <div className={styles.wrapper}>
+    <div data-testid="udWrapper" className={styles.wrapper}>
       <div className={styles.imgWrap}>
         <img className={styles.img} src={user.avatar_url} alt="avatar" />
       </div>
