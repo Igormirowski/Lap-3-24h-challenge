@@ -1,12 +1,15 @@
 import './App.css';
+import { Header, Footer } from './layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       App component
-      </header>
-    </div>
+
+    <>
+        <Header />
+        <h1>Home</h1>
+        <Footer />
+    </>
+    
   );
 }
 
