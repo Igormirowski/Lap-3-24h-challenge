@@ -1,13 +1,19 @@
-// import React from 'react'
+import React from 'react'
+import Repo from '../Repo'
+function ListDetails({ list }) {
+  return (
+    <ul>
+      {list
+        ? list.map((repository) => <Repo repo={repository} />)
+        : 'Loading...'}
+    </ul>
+  )
+}
 
-// function ListDetails({ list }) {
-//   return (
-//     <div>
+export default ListDetails
 
-
-//     </div> 
-     
-//   )
-// }
-
-// export default ListDetails
+// name
+// html_url
+// stargazers_count
+// watchers_count
+// forks_count
