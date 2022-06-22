@@ -25,7 +25,6 @@ const Home = () => {
   return (
     <>
       <h1>Home</h1>
-      <h3>{userDetails.login}</h3>
       <SearchBar onFormSubmit={onFormSubmit} />
       <UserDetails user={userDetails} />
     </>
