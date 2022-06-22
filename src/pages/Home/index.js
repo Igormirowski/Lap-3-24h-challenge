@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { SearchBar, UserDetails } from '../../components'
 import { getData } from '../../api/github'
+import styles from './index.module.css'
 
 const Home = () => {
   const [term, setTerm] = useState('octocat')
@@ -21,11 +22,11 @@ const Home = () => {
   }
 
   return (
-    <>
-      <h1>Home</h1>
+    <div className={styles.wrapper}>
+      {/* <h1 className={styles.title}>Home</h1> */}
       <SearchBar onFormSubmit={onFormSubmit} />
       <UserDetails user={userDetails} />
-    </>
+    </div>
   )
 }
 

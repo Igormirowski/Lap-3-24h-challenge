@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 400px;
-
+  
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -8,10 +8,13 @@
   background-color: black;
   color: white;
   font-size: 1.4rem;
-  padding: 20px;
+  padding: 10px;
   /* border: 2px solid white; */
   border-radius: 20px;
   
+  position: absolute;
+  top: 20px;
+  left: 40%;
 }
 
 .inputWrapper {
@@ -44,4 +47,10 @@
   border: 2px solid white;
   border-radius: 10px;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .label {
+    display: none;
+  }
 }
