@@ -9,6 +9,7 @@ After entering a GitHub username in thr search bar, the user is presented with t
 
 - clone repo
 - cd into folder
+- npm i
 - npm start
 
 ## How to test 🧪
@@ -17,6 +18,7 @@ If you haven't done it already:
 
 - clone repo
 - cd into folder
+- npm i
   Then:
 - npm run test
 
