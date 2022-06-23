@@ -1,5 +1,7 @@
 # Futureproof 24h Challenge - Lap 3 💪
 
+https://24challenge-lap3.netlify.app/
+
 ## Purpose 🎯
 
 The app allows the user to get data from the GitHub service.
